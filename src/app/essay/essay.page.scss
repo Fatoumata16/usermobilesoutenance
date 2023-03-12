@@ -1,0 +1,21 @@
+ion-header{
+    --background:linear-gradient(to bottom,#3F51B5 0%,#5A55AE 100%);
+    --border-width:0px;
+}
+.p{
+    background:linear-gradient(0deg,rgba(0, 0, 0, 0.137),rgba(41, 7, 179, 0)),
+    url("/assets/soutenance7-removebg-preview.png")  center center  /  cover;
+     height: 100%;  
+}
+ion-content {
+    width: calc(100% + 20px);
+    --padding-end: 20px !important;
+  }
+  
+  ion-content::part(scroll) {
+    margin-right: -20px;
+  }
+
+  .ic{
+    color: #04BBFF!important;
+  }

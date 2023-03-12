@@ -1,0 +1,91 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>App</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+<ion-content >
+  <div style="width: 100%;height: 40%;background-color: #151921;" class="p">
+    <ion-button color="dark" [routerLink]="['/loginvrai',id]"><ion-icon name="arrow-back-outline"></ion-icon></ion-button>
+
+  </div>
+  <div  style="width: 100%;height: 70%;background-color: #ffffff; display: flex;justify-content: center;">
+    <div style="width: 90%;height: 80%;background-color: #fbfcff;border-radius: 38px;position: relative;top: -10%;left: -10px;">
+      <div style="width: 100%;height: 80%;display: flex;justify-content: center;">
+        <div class="border-blue"style="position: relative;top: 10px;">
+          <div class="border-white"style="position: relative;top: -60px;">
+            <div class="img-box">
+              <img src="/assets/soutenance2.jpg" alt="" style="position: relative;top: -60px;">
+            </div>
+          </div>
+        </div>    </div>
+      <div style="position: relative;top: -68%;">
+        <h4 style="text-align: center;font-family: 'Inika';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 19px;
+        line-height: 21px;"> {{pl}}  {{pl2}}</h4>
+           
+      </div>
+      <div  style=" width: 100%;height:40%;  background: #E8EAF1;
+      box-shadow: 3px 3px 1px 1px rgba(0, 0, 0, 0.25);
+      border-radius: 30px;position: relative;top: -67%; ">
+      <div style=" width: 100%;height: 90%;  
+      
+      display: flex;justify-content: space-around;">
+         <div style="background: #FFFFFF; width: 40%;height: 60%;
+         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+         border-radius: 20px;margin: 15px;position: relative;top: 30px;" >
+           <img src="assets/yousv.jpg" alt="" style="width: 100%;height: 100%;">
+         </div>
+         <div style="width: 60%;margin: 15px;">
+          <h4 style="text-align: center;font-family: 'Inika';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 21px;position: relative;left: -10px;">{{pr}}</h4>
+          <p> {{desc}}</p>
+         </div>
+      </div> 
+     
+    </div>
+  </div>
+  </div>
+  <div style="width: 100%;height: 39%;background: #E8EAF1;
+  box-shadow: 3px 3px 1px 1px rgba(0, 0, 0, 0.25);position: relative;top: -319px;">
+   <h3 style="color: black;font-family: 'Inika';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 26px;text-align: center;">Les Criteres d'evaluations</h3>
+   <div style="width: 100%;display: flex;justify-content: center !important;position: relative;">
+    <ion-progress-bar [value]="evaluationPercentage" max=items.length-1 style="width: 85%;height: 10px;background-color: rgb(245, 239, 239);border-radius: 10px;"></ion-progress-bar>
+   </div>
+   <div style="width: 100%;height: 99%;position: relative;top: -30px;" class="h">
+    <div style="display: flex;justify-content: center;position: relative;left: -10px;">
+      
+      <ion-card style="height: 50%;width: 98%;position: relative;top: 30px;border-radius: 10px;">
+        <br>
+      <ion-card-content style="text-align: center;">
+        <div *ngFor="let item of items;let i=index" style="position: relative;top: -20px;">
+          <div *ngIf="currentindex===i">
+        <h6 style="font-size: 20px;font-weight: 600;font-style: 'inika';color: black;"> {{item[1]}}</h6>
+        <br>
+       
+           
+           <div  style="display: flex;justify-content: space-between;">
+            <ion-button  color="dark" (click)="nextitem(item[0])"   [disabled]="currentindex >= items.length " > <ion-icon name="arrow-forward-outline"></ion-icon></ion-button>
+            <ion-button  color="dark" (click)="previousitem()"  [disabled]="currentindex <= 0" > <ion-icon name="arrow-back-outline"></ion-icon></ion-button> </div>
+            <div  style="display: flex;justify-content: space-around;position: relative;top: 20px;">
+              <ion-button color="tertiary" (click)="vrai(item[0])" style="width: 130px;"  [disabled]="currentindex >= items.length "> valider</ion-button>
+              <ion-button color="" (click)="faux(item[0])" [disabled]="currentindex >= items.length "> pas valider</ion-button> </div>
+          </div>
+          </div>
+      </ion-card-content>
+      </ion-card> 
+  
+  </div>
+  </div>
+</div>
+
+  
+  </ion-content>

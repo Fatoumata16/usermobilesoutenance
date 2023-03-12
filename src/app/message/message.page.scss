@@ -1,0 +1,21 @@
+.k{
+    background:linear-gradient(0deg,rgba(0, 0, 0, 0.75),rgba(122, 74, 74, 0.24)),
+    url("/assets/yous8.jpg") no-repeat center center  /  cover;
+    object-fit:unset;
+    margin-top: -10px;
+}
+.alo{
+    --background: #151515;
+    color: white;
+    --ion-item-border-color: transparent;
+    list-style-type: none;
+
+}
+ion-content {
+    width: calc(100% + 20px);
+    --padding-end: 20px !important;
+  }
+  
+  ion-content::part(scroll) {
+    margin-right: -25px;
+  }

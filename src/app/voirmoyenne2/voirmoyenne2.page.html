@@ -1,0 +1,62 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>App</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+<ion-content >
+  <div style="width: 100%;height: 100%;background-color: #151921;" class="o">
+    <ion-button color="dark" [routerLink]="['/tabs/accueilpouretudiant']"><ion-icon name="arrow-back-outline"></ion-icon></ion-button>
+
+    <div style="width: 100%;height: 70%;background: #8aaaca98;
+    box-shadow: 3px 3px 1px 1px rgba(0, 0, 0, 0.25);position: relative;top: 120px;">
+       
+  <div class="ol" style="width: 100%;height: 100%;display: flex;justify-content: center;position: relative;top: 0px;">
+    <div style="position: relative;top: 30px;">
+     <div>
+     <div style="display: flex;justify-content: center;position: relative;top: 54px;">
+       <img src="https://i.pravatar.cc/300?u=b" style="width: 40px;border-radius: 40%;">
+     </div> 
+     <div  style="display: flex;justify-content: center;"> 
+       <img src="assets/sou3-removebg-preview.png" alt="" style="height: 150px;">
+     </div>
+     </div>
+       <div>
+         <ion-grid  >
+           <ion-row >
+             <ion-col>
+               <h4 style="text-align: center;font-family: 'inika';font-weight: 600;line-height: 26px;font-size: 23px;color: black;">Le Resultat de {{prenom}} {{nom}}</h4>
+             </ion-col>
+           </ion-row>
+           <ion-row style="position: relative;top: -20px;">
+             <ion-col style="display: flex;justify-content: center;">
+               <hr style="width: 50px;text-align: center;color: black;">
+             </ion-col>
+           </ion-row>
+           <div >
+           <ion-row  >
+            <ul  *ngFor="let resultat of t | keyvalue" >
+              <ion-item >
+              <li  style="font-family: 'inika';font-weight: 600;line-height: 26px;font-size: 18px;"  >{{resultat.key}} : </li>
+              <li style="display: flex;justify-content: right;font-family: 'inika';font-weight: 600;line-height: 26px;font-size: 15px;">{{resultat.value}}</li>
+            </ion-item> </ul>
+             <ion-col size-xs="2"></ion-col>
+             <!-- <ion-col size-xs="2" ></ion-col> -->
+   
+            
+           </ion-row> </div>
+                 <ion-row style="position: relative;top: -15px;">
+             <ion-col style="text-align: center;">
+               <h4 style="font-family: 'inika';font-weight: 600;line-height: 26px;font-size: 21px;">le Resultat  est :{{q}} <span style="font-family: 'inika';font-weight: 700;line-height: 26px;font-size: 18px;"> </span></h4>
+             </ion-col>
+           </ion-row>
+         </ion-grid>
+       </div>
+     </div>
+   </div>
+       
+    </div>
+  </div>
+
+   
+  
+  </ion-content>

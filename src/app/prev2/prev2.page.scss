@@ -1,0 +1,17 @@
+.alo{
+    --background: #151921;
+    color: white;
+    --ion-item-border-color: transparent;
+    list-style-type: none;
+
+}
+ion-content {
+  // ICI ON BLOCK LE SCROLLING
+  --offset-bottom: auto !important;
+  background: #f8f6fb;
+  --overflow: hidden;
+  overflow: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

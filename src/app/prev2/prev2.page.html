@@ -1,0 +1,167 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>prev2</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+  <div style="height: 135px;background-color: #151921;">
+    <ion-item class="alo" style="position: relative;top: 20px;" >
+      <ion-avatar slot="end">
+        <ion-img src="/assets/yousv.jpg"></ion-img>
+      </ion-avatar>
+      <ion-label>
+        <h2>{{nop}}</h2>
+       <ion-button color="dark" [routerLink]="['/tabs/accueil']"><ion-icon name="arrow-back-outline"></ion-icon></ion-button>
+      </ion-label>
+    </ion-item>
+  </div>
+<div style="display: flex;justify-content: space-between;background-color: rgb(255, 255, 255);width: 100%;height:170px;border-radius: 30px;position: relative;top: -30px;">
+ <ion-card style="width: 130px; background-color: #151921;height: 65px;text-align: center;">
+  <button id="open-modal" expand="block" style="position: relative;top: 8px;background-color: #151921;color: white;font-family: 'Inika';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;"> +{{p}}</button>
+  <h5 style="text-align: center;color: white;position: relative;top: 3px;font-family: 'Inika';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;"> etudiant </h5>
+ </ion-card>
+ <ion-card style="width: 130px; background-color: #151921;height: 65px;">
+  <h2 style="text-align: center;position: relative;top: 10px;color: white;font-family: 'Inika';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;">{{pi}}</h2>
+  <h5 style="text-align: center;color: white;font-family: 'Inika';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  ">Soutenances</h5>
+ </ion-card>
+ <ion-card style="width: 130px; background-color: #151921;height: 65px;">
+  <h2 style="text-align: center;position: relative;top: 10px;color: white;font-family: 'Inika';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;">- {{k}}</h2>
+  <h5 style="text-align: center;color: white;font-family: 'Inika';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  ">etudiant</h5>
+ </ion-card>
+</div>
+<div style="width: 100%;height: 180px;background-color: white;border-radius: 30px;position: relative;top: -100px;">
+<div style="display: flex;justify-content: left; position: relative;top:20px;background-color: #fbfdfd; ">
+  <ion-segment style="
+  font-style: normal;
+  font-weight: 400;
+  font-size: 78px;
+  line-height: 34px;font-size: 15px;
+  color: #000000;width: 280px;" 
+value="all" 
+color="tertiary" 
+scrollable="true"
+mode="ios"
+[(ngModel)]="segmentModel" 
+(ionChange)="segmentChanged($event)">
+<ion-segment-button value="all">
+  <ion-label>Pas Note</ion-label>
+</ion-segment-button>
+<ion-segment-button value="favorites">
+  <ion-label>Note</ion-label>
+</ion-segment-button>
+</ion-segment>
+</div> </div>
+
+<div style="margin-top: -70px;">
+  <ion-slides  [options]="slideOpt " style="  width: 100%!important; " *ngIf="segmentModel === 'all'">
+  </ion-slides>
+</div>
+<!-- ici le card -->
+<div style="margin-top: -155px;" *ngIf="segmentModel === 'all'">
+  <ion-card style="height: 120px;border-radius: 20px;" *ngFor="let g of item">
+    <ion-grid>
+      <ion-row>
+        <ion-col style="margin-top: 10px;">
+          <h3 style="font-family: 'Inika';
+          font-weight: 600;
+          font-size: 15px;
+          color: #000000;">{{g[3]}} {{g[4]}}</h3>
+          <p style="font-family: 'Inika';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 13px;
+          color: #000000;"> {{g[5]}}.</p>
+          <ion-button style="margin-top: -5px;height: 30px;" [routerLink]="['/loginvrai', g[1]]">voir</ion-button>
+        </ion-col>
+        <ion-col>
+          <img src="/assets/soutenance2.jpg" alt="" style="height: 90px; width: 80%;">
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+</div> 
+
+<div style="position: relative;top: -30px;" *ngIf="segmentModel === 'favorites'">
+  <ion-card style="height: 120px;border-radius: 20px;position: relative;top: -110px;" *ngFor="let g of items">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <h3 style="font-family: 'Inika';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          color: #000000;">{{g[3]}} {{g[4]}}</h3>
+          <p style="font-family: 'Inika';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 10px;
+          color: #000000;">Lorem odio corrupti nulla dolor blanditiis! Ut {{g[5]}}.</p>
+          <ion-button (click)="nex(g[1])"  style="margin-top: -5px;height: 30px;"   >voir</ion-button>
+        </ion-col>
+        <ion-col>
+          <img src="/assets/soutenance2.jpg" alt="" style="height: 90px; width: 80%;">
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+</div> 
+
+
+
+<ion-modal #modal trigger="open-modal" [initialBreakpoint]="0.25" [breakpoints]="[0, 0.25, 0.5, 0.75]">
+  <ng-template>
+    <ion-content>
+<h3 style=" margin-top: 20px;  text-align: center;font-family: 'inika;">Soutenance a venir</h3>      <!-- <ion-list *ngFor="let g of it"> -->
+        <div>
+          <ion-grid>
+            <ion-row >
+              <ion-col size-xs="6" *ngFor="let g of it">
+                <ion-card style="border-bottom-left-radius: 30px;border-top-right-radius: 30px;  background-color: #fbfdfd;border: 1px solid rgb(8, 8, 8);">
+                  <ion-card-header>
+           <ion-icon size="large" name="book-sharp" color="tertiary"></ion-icon>
+          </ion-card-header>
+                  <ion-card-content> <h4 style="color: #420fcf;position: relative;top: -2px;font-size: 15px;"> {{g[1]}}</h4>
+                    <h4 style="color: #420fcf;position: relative;top: -2px;font-size: 14px;"> de  {{g[4]}} a {{g[5]}}</h4>  
+                    <h4 style="color: #420fcf;position: relative;top: -2px;font-size: 14px;"> {{g[3].slice(0,10)}} </h4>  </ion-card-content>
+                </ion-card>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+          <ion-avatar slot="start">
+            <ion-img src="https://i.pravatar.cc/300?u=b"></ion-img>
+          </ion-avatar>
+          <ion-label>
+            <!-- <h2>{{g[5]}}</h2>
+            <p> {{g[2]}}</p> -->
+          </ion-label>
+      
+       
+        
+        
+      <!-- </ion-list> -->
+    </ion-content>
+  </ng-template>
+</ion-modal>
+</ion-content>

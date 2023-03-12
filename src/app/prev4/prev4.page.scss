@@ -1,0 +1,15 @@
+.p{
+    background:linear-gradient(0deg,rgba(0, 0, 0, 0.137),rgba(41, 7, 179, 0)),
+    url("/assets/retard-removebg-preview.png")  center center  /  cover;
+     height: 70%;  
+     width: 100%;
+     border-top-left-radius: 60px;
+}
+ion-content {
+    width: calc(100% + 20px);
+    --padding-end: 20px !important;
+  }
+  
+  ion-content::part(scroll) {
+    margin-right: -20px;
+  }

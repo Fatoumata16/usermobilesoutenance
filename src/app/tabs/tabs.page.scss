@@ -1,0 +1,39 @@
+// ion-tabs{
+
+    
+// }
+// ion-tabs{
+//     background-color: ;
+// }
+ion-tab-bar {
+    
+    bottom: 10px;
+  position: relative;
+    border-radius: 30px;
+    width: 90%;
+    height: 45px;
+    margin: 0 auto;
+    background-color: rgba(255, 0, 0, 0)!important;
+  }
+  ion-tabs{
+    background-color: white;
+  }
+  
+  ion-tab-button {
+    background-color: #151921;
+    --color: white;
+    --color-selected: #ff3604;
+  
+    &::before {
+      background-color: transparent;
+      display: block;
+      content: "";
+      margin: 0 auto;
+      width: 20px;
+      height: 2px;
+    }
+  
+    &.tab-selected::before {
+      background-color: #420fcf;
+    }
+  }

@@ -1,0 +1,295 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>acc</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+<ion-content>
+  <div style="width: 100% !important;height: 280px;background-color: aqua; " class="li">
+    <!-- <div style="display: flex;justify-content: space-around;position: relative;   top: 30px;">
+      <h6> salut Fatoumata</h6>
+      <img src="/assets/logovrai.png" alt="" width="30px" style="border-radius: 60px;">
+     </div> -->
+  </div>
+  <div style="width: 100%;height: 80px;background-color: rgb(255, 255, 255); border-top-left-radius: 40px;border-top-right-radius: 40px;margin-top: -70px;">
+    <div style="display: flex;justify-content: center; position: relative;top: 0px;z-index: 1;">
+      <img src="/assets/logovrai.png" alt="" width="120px" style="z-index: 2;" >
+    </div>
+    <!-- <div style="display: flex;justify-content: center; width: 100%;margin-top: -15px;">
+      <p style=" margin-left: 40px;margin-right:40px; color: #151921;font-style: 'inika';font-weight: 700;font-size: 9px;">Lorem ipsum dolor sit, amet conse</p>
+    </div> -->
+    <!-- <hr style="color: #FB5841;width: 70px; margin-top: -7px;"> -->
+    <div  style="display: flex;justify-content: center;margin-top: -4px;z-index: 9;">
+        <div style="width: 40px;height: 30px;background-color: #00000000; margin-right: 10px;" >
+          <ion-button  style="height: 100%;width: 100%;"> <ion-icon name="home" size="large" style="width: 100%;height: 100%;"></ion-icon></ion-button>
+        </div>
+        <div style="width: 40px;height: 30px;background-color: #00000000; margin-right: 10px;">
+          <ion-button  style="height: 100%;width: 100%;"> <ion-icon name="home" size="large" style="width: 100%;height: 100%;"></ion-icon></ion-button>
+        </div>
+        <div style="width: 40px;height: 30px;background-color: #00000000;">
+          <ion-button  style="height: 100%;width: 100%;"> <ion-icon name="home" size="large" style="width: 100%;height: 100%;"></ion-icon></ion-button>
+        </div>
+    </div>
+    <div style="position: relative;top: 20px;" >
+      <!-- <div style="display: flex;justify-content: left;   margin-top: -13px;">
+      <h4 style="font-family: 'Inika';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 42px;
+  color: #000000;">General</h4> </div> -->
+      <div style="display: flex;justify-content: left; ">
+        <ion-segment style="font-family: 'Inika';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 34px;
+        color: #000000;" 
+    value="all" 
+    color="tertiary" 
+    scrollable="true"
+    mode="ios"
+    [(ngModel)]="segmentModel" 
+    (ionChange)="segmentChanged($event)">
+      <ion-segment-button value="all">
+        <ion-label>All</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="favorites">
+        <ion-label>Favorites</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+      </div>
+      <div style="margin-top: -20px;">
+        <ion-slides  [options]="slideOpt " style="  width: 100%!important; " *ngIf="segmentModel === 'all'">
+        <ion-slide>
+          <div style="display: flex;justify-content: space-around;position: relative;left: 28px;">
+            <ion-col    >
+              <ion-card style="width: 120px;height: 140px!important; "  >
+               <div style="background-color: 
+               #505074;">
+                 <img src="/assets/soutenance7-removebg-preview.png" alt="" class="img" style="height: 120px!important;width: 100%!important;position: relative;top: -10px;">
+               </div>        
+                <!-- <ion-card-content> -->
+                  <!-- <div class="details"> 
+                    <div class="content">
+                    <h2>que ce que lorem ipsum</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus et aliquid quidem voluptas recusandae
+                       ab explicabo asperiores provident perferendis ad numquam odit, fuga neque sunt atque in eos eveniet? Nisi.</p> </div>
+                  </div> -->
+                  <div style="background-color: rgb(255, 254, 254); position: relative;top: -40px;border-radius: 20px;height: 65px;width: 140px;">
+                  <h1 style="text-align: center; padding-top: 30px;font-size: 9px; font-family: 'Inika';font-weight: 600;color: black;position: relative;top: -20px;">Fatoumata demmm</h1> <br>
+                  <p style="text-align: center;font-size: 9px; font-family: 'Inika';font-weight: 600;color: black;position: relative;top: -35px;">asdfghjkl;tyuiop</p>
+                  </div>
+                  <!-- <ion-button fill="outline"  [routerLink]="['/region', g.codeRegion]">Details region</ion-button> -->
+                <!-- </ion-card-content> -->
+              </ion-card>
+            </ion-col>
+             <ion-col    >
+               <ion-card style="width: 120px;height: 140px!important;"  >
+                <div style="background-color: #AF535E;">
+                  <img src="/assets/soutenance7-removebg-preview.png" alt="" class="img" style="height: 120px!important;width: 100%!important;position: relative;top: -10px;">
+                </div>        
+                 <!-- <ion-card-content> -->
+                   <!-- <div class="details"> 
+                     <div class="content">
+                     <h2>que ce que lorem ipsum</h2>
+                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus et aliquid quidem voluptas recusandae
+                        ab explicabo asperiores provident perferendis ad numquam odit, fuga neque sunt atque in eos eveniet? Nisi.</p> </div>
+                   </div> -->
+                   <div style="background-color: rgb(255, 254, 254); position: relative;top: -40px;border-radius: 20px;height: 65px;width: 140px;">
+                   <h1 style="text-align: center; padding-top: 30px;font-size: 9px; font-family: 'Inika';font-weight: 600;color: black;position: relative;top: -20px;">Fatoumata demmm</h1> <br>
+                   <p style="text-align: center;font-size: 9px; font-family: 'Inika';font-weight: 600;color: black;position: relative;top: -35px;">asdfghjkl;tyuiop</p>
+                   </div>
+                   <!-- <ion-button fill="outline"  [routerLink]="['/region', g.codeRegion]">Details region</ion-button> -->
+                 <!-- </ion-card-content> -->
+               </ion-card>
+             </ion-col>
+            </div>
+            </ion-slide>
+            <ion-slide>
+              <div style="display: flex;justify-content: space-around;position: relative;left: 64px;">
+                <ion-col    >
+                  <ion-card style="width: 120px;height: 140px!important; "  >
+                   <div style="background-color: 
+                   #505074;">
+                     <img src="/assets/soutenance7-removebg-preview.png" alt="" class="img" style="height: 120px!important;width: 100%!important;position: relative;top: -10px;">
+                   </div>        
+                    <!-- <ion-card-content> -->
+                      <!-- <div class="details"> 
+                        <div class="content">
+                        <h2>que ce que lorem ipsum</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus et aliquid quidem voluptas recusandae
+                           ab explicabo asperiores provident perferendis ad numquam odit, fuga neque sunt atque in eos eveniet? Nisi.</p> </div>
+                      </div> -->
+                      <div style="background-color: rgb(255, 254, 254); position: relative;top: -40px;border-radius: 20px;height: 65px;width: 140px;">
+                      <h1 style="text-align: center; padding-top: 30px;font-size: 9px; font-family: 'Inika';font-weight: 600;color: black;position: relative;top: -20px;">Fatoumata demmm</h1> <br>
+                      <p style="text-align: center;font-size: 9px; font-family: 'Inika';font-weight: 600;color: black;position: relative;top: -35px;">asdfghjkl;tyuiop</p>
+                      </div>
+                      <!-- <ion-button fill="outline"  [routerLink]="['/region', g.codeRegion]">Details region</ion-button> -->
+                    <!-- </ion-card-content> -->
+                  </ion-card>
+                </ion-col>
+                 <ion-col    >
+                   <ion-card style="width: 120px;height: 140px!important;"  >
+                    <div style="background-color: #AF535E;">
+                      <img src="/assets/soutenance7-removebg-preview.png" alt="" class="img" style="height: 120px!important;width: 100%!important;position: relative;top: -10px;">
+                    </div>        
+                     <!-- <ion-card-content> -->
+                       <!-- <div class="details"> 
+                         <div class="content">
+                         <h2>que ce que lorem ipsum</h2>
+                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus et aliquid quidem voluptas recusandae
+                            ab explicabo asperiores provident perferendis ad numquam odit, fuga neque sunt atque in eos eveniet? Nisi.</p> </div>
+                       </div> -->
+                       <div style="background-color: rgb(255, 254, 254); position: relative;top: -40px;border-radius: 20px;height: 65px;width: 140px;">
+                       <h1 style="text-align: center; padding-top: 30px;font-size: 9px; font-family: 'Inika';font-weight: 600;color: black;position: relative;top: -20px;">Fatoumata demmm</h1> <br>
+                       <p style="text-align: center;font-size: 9px; font-family: 'Inika';font-weight: 600;color: black;position: relative;top: -35px;">asdfghjkl;tyuiop</p>
+                       </div>
+                       <!-- <ion-button fill="outline"  [routerLink]="['/region', g.codeRegion]">Details region</ion-button> -->
+                     <!-- </ion-card-content> -->
+                   </ion-card>
+                 </ion-col>
+                </div>
+                </ion-slide>
+                <ion-slide>
+                  <div style="display: flex;justify-content: space-around;position: relative;left: 88px;">
+                    <ion-col    >
+                      <ion-card style="width: 120px;height: 140px!important; "  >
+                       <div style="background-color: 
+                       #505074;">
+                         <img src="/assets/soutenance7-removebg-preview.png" alt="" class="img" style="height: 120px!important;width: 100%!important;position: relative;top: -10px;">
+                       </div>        
+                        <!-- <ion-card-content> -->
+                          <!-- <div class="details"> 
+                            <div class="content">
+                            <h2>que ce que lorem ipsum</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus et aliquid quidem voluptas recusandae
+                               ab explicabo asperiores provident perferendis ad numquam odit, fuga neque sunt atque in eos eveniet? Nisi.</p> </div>
+                          </div> -->
+                          <div style="background-color: rgb(255, 254, 254); position: relative;top: -40px;border-radius: 20px;height: 65px;width: 140px;">
+                          <h1 style="text-align: center; padding-top: 30px;font-size: 9px; font-family: 'Inika';font-weight: 600;color: black;position: relative;top: -20px;">Fatoumata demmm</h1> <br>
+                          <p style="text-align: center;font-size: 9px; font-family: 'Inika';font-weight: 600;color: black;position: relative;top: -35px;">asdfghjkl;tyuiop</p>
+                          </div>
+                          <!-- <ion-button fill="outline"  [routerLink]="['/region', g.codeRegion]">Details region</ion-button> -->
+                        <!-- </ion-card-content> -->
+                      </ion-card>
+                    </ion-col>
+                     <ion-col    >
+                       <ion-card style="width: 120px;height: 140px!important;"  >
+                        <div style="background-color: #AF535E;">
+                          <img src="/assets/soutenance7-removebg-preview.png" alt="" class="img" style="height: 120px!important;width: 100%!important;position: relative;top: -10px;">
+                        </div>        
+                         <!-- <ion-card-content> -->
+                           <!-- <div class="details"> 
+                             <div class="content">
+                             <h2>que ce que lorem ipsum</h2>
+                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus et aliquid quidem voluptas recusandae
+                                ab explicabo asperiores provident perferendis ad numquam odit, fuga neque sunt atque in eos eveniet? Nisi.</p> </div>
+                           </div> -->
+                           <div style="background-color: rgb(255, 254, 254); position: relative;top: -40px;border-radius: 20px;height: 65px;width: 140px;">
+                           <h1 style="text-align: center; padding-top: 30px;font-size: 9px; font-family: 'Inika';font-weight: 600;color: black;position: relative;top: -20px;">Fatoumata demmm</h1> <br>
+                           <p style="text-align: center;font-size: 9px; font-family: 'Inika';font-weight: 600;color: black;position: relative;top: -35px;">asdfghjkl;tyuiop</p>
+                           </div>
+                           <!-- <ion-button fill="outline"  [routerLink]="['/region', g.codeRegion]">Details region</ion-button> -->
+                         <!-- </ion-card-content> -->
+                       </ion-card>
+                     </ion-col>
+                    </div>
+                    </ion-slide>
+          </ion-slides>
+      </div>
+      <div>
+        <ion-list>
+          <ion-item>
+            <ion-select
+            
+              placeholder="Select fruit"
+              (ionChange)="handleChange($event)"
+            >
+              <ion-select-option  *ngFor="let g of f ">{{g.nom}}</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-list>
+      </div>
+      
+      <div style="margin-top: -15px;">
+        <ion-card style="height: 120px;border-radius: 20px;" *ngFor="let g of t">
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <h3 style="font-family: 'Inika';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                color: #000000;">{{g[2]}} {{g[3]}}</h3>
+                <p style="font-family: 'Inika';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 10px;
+                color: #000000;">Lorem odio corrupti nulla dolor blanditiis! Ut.</p>
+                <ion-button style="margin-top: -5px;height: 30px;" [routerLink]="['/message', 2]">voir</ion-button>
+              </ion-col>
+              <ion-col>
+                <img src="/assets/soutenance2.jpg" alt="" style="height: 90px; width: 80%;">
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card>
+      </div> 
+    </div>
+  </div>
+   <ion-modal #modal trigger="open-modal">
+    <ng-template>
+      <ion-content>
+        <ion-toolbar>
+          <ion-title>Modal</ion-title>
+          <ion-buttons slot="end">
+            <ion-button color="light" (click)="modal.dismiss()">Close</ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+        <ion-list>
+          <ion-item>
+            <ion-avatar slot="start">
+              <ion-img src="https://i.pravatar.cc/300?u=b"></ion-img>
+            </ion-avatar>
+            <ion-label>
+              <h2>Connor Smith</h2>
+              <p>Sales Rep</p>
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-avatar slot="start">
+              <ion-img src="https://i.pravatar.cc/300?u=a"></ion-img>
+            </ion-avatar>
+            <ion-label>
+              <h2>Daniel Smith</h2>
+              <p>Product Designer</p>
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-avatar slot="start">
+              <ion-img src="https://i.pravatar.cc/300?u=d"></ion-img>
+            </ion-avatar>
+            <ion-label>
+              <h2>Greg Smith</h2>
+              <p>Director of Operations</p>
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-avatar slot="start">
+              <ion-img src="https://i.pravatar.cc/300?u=e"></ion-img>
+            </ion-avatar>
+            <ion-label>
+              <h2>Zoey Smith</h2>
+              <p>CEO</p>
+            </ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-content>
+    </ng-template>
+  </ion-modal> 
+
+
+  
+
+  
+</ion-content>

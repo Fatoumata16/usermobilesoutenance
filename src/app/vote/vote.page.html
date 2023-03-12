@@ -1,0 +1,91 @@
+
+<ion-content>
+ <!-- <div style="width: 100%;height: 50%;" class="ob">
+  <div style="width: 100%;height: 100%; display: flex;justify-content: center;position: relative;top: 30%;">
+   
+    <div>
+      <ion-avatar >
+        <ion-img src="https://i.pravatar.cc/300?u=b"></ion-img>
+      </ion-avatar>    <img src="assets/sou3-removebg-preview.png" alt="" style="height: 250px;"> </div>
+   </div>
+ </div>
+ <div style="margin-top: -85px;">
+  <ion-card class="al" style="width: 290px;" >
+    <ion-card-content style="position: relative;top: 30px;">
+      <ion-grid  >
+        <ion-row >
+          <ion-col>
+            <h4 style="text-align: center;font-family: 'inika';font-weight: 600;line-height: 26px;font-size: 23px;color: black;">Le Resultat de Mm Fatoumata</h4>
+          </ion-col>
+        </ion-row>
+        <ion-row style="position: relative;top: -20px;">
+          <ion-col style="display: flex;justify-content: center;">
+            <hr style="width: 50px;text-align: center;color: black;">
+          </ion-col>
+        </ion-row>
+        <ion-row  style="position: relative;top: -30px;" >
+          <ion-col size-xs="5" *ngFor="let g of t">
+            <h4 style="font-family: 'inika';font-weight: 600;line-height: 26px;font-size: 15px;">{{g[0]}}</h4>
+            <h6 style="font-family: 'inika';font-weight: 600;line-height: 26px;font-size: 16px;">{{g[1]}}</h6>
+          </ion-col >
+          <ion-col size-xs="2"></ion-col>
+          
+
+         
+        </ion-row>
+              <ion-row style="position: relative;top: -30px;">
+          <ion-col style="text-align: center;">
+            <h4 style="font-family: 'inika';font-weight: 600;line-height: 26px;font-size: 15px;">la Note Total est :{{b}} <span style="font-family: 'inika';font-weight: 700;line-height: 26px;font-size: 18px;"> 16</span></h4>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+ </div> -->
+
+ <div class="ol" style="width: 100%;height: 60%;display: flex;justify-content: center;position: relative;top: 20px;">
+   <div style="position: relative;top: 30px;">
+    <div>
+    <div style="display: flex;justify-content: center;position: relative;top: 54px;">
+      <img src="https://i.pravatar.cc/300?u=b" style="width: 40px;border-radius: 40%;">
+    </div> 
+    <div  style="display: flex;justify-content: center;"> 
+      <img src="assets/sou3-removebg-preview.png" alt="" style="height: 150px;">
+    </div>
+    </div>
+      <div>
+        <ion-grid  >
+          <ion-row >
+            <ion-col>
+              <h4 style="text-align: center;font-family: 'inika';font-weight: 600;line-height: 26px;font-size: 23px;color: black;">Le Resultat de {{prenom}}  {{nom}}</h4>
+            </ion-col>
+          </ion-row>
+          <ion-row style="position: relative;top: -20px;">
+            <ion-col style="display: flex;justify-content: center;">
+              <hr style="width: 50px;text-align: center;color: black;">
+            </ion-col>
+          </ion-row>
+          <div style="display: flex;justify-content: center;">
+          <ion-row  style="position: relative;top: -30px;display: flex;justify-content: space-between;" >
+            <ion-col size-xs="5" *ngFor="let g of t">
+              <h4 style="font-family: 'inika';font-weight: 600;line-height: 26px;font-size: 15px;">{{g[0]}}</h4>
+              <h6 style="font-family: 'inika';font-weight: 600;line-height: 26px;font-size: 16px;">{{g[1]}}</h6>
+            </ion-col >
+            <ion-col size-xs="2"></ion-col>
+            <!-- <ion-col size-xs="2" ></ion-col> -->
+  
+           
+          </ion-row> </div>
+                <ion-row style="position: relative;top: -30px;">
+            <ion-col style="text-align: center;">
+              <h4 style="font-family: 'inika';font-weight: 600;line-height: 26px;font-size: 15px;">la Note Total est :{{b}} <span style="font-family: 'inika';font-weight: 700;line-height: 26px;font-size: 18px;"> </span></h4>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+    </div>
+  </div>
+  <div style="position: relative;top: 30px;display: flex;justify-content: right;right: 20px;">
+  <ion-button [routerLink]="['/resultat']">voir plus</ion-button> </div>
+
+</ion-content>

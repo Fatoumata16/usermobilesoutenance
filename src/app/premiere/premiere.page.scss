@@ -1,0 +1,99 @@
+.am{
+    // border-radius: 50%;
+    background-color: white;
+     
+     border-top-right-radius: 10%;
+     border-top-left-radius: 10%;
+     height: 30%;
+    
+    
+    //  border-radius: 80px,80px,0,0;
+    //  border-top-left-radius: 5%;
+    //  border: top right 30px;
+    //  border-top-right-radius: 5%;
+    //  transform: rotate(-10.06deg);
+    //  transform: rotateX(-25.06deg);
+    //  transform: rotateY(-5.06deg);
+    // position: absolute;
+//     position: absolute;
+// width: 444.22px;
+// height: 357.98px;
+// left: 434.16px;
+
+// background-color: #FFFFFF;
+// transform: rotate(-179.06deg);
+}
+// .b{
+//     background-color: aqua;
+// }
+.o{
+    position: relative;
+    top: -40px;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100%!important;
+    background:linear-gradient(0deg,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0)),
+       url("/assets/autre-removebg-preview.png")  center center  /  cover;
+    height: 59%;
+    //    object-fit:fill;
+       
+    
+}
+.l{
+    width: 100%!important;  
+}
+ion-content{
+    position: fixed;
+}
+.p{
+    position: relative;
+    top: -210px;
+    color: black;
+    text-align: center;
+}
+.k{
+    background-color: black;
+    width: 100%;
+}
+.g{
+    width: 100%!important;
+    position: relative;
+    top: -154px;
+    // background:linear-gradient(0deg,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0)),
+    // url("/assets/ok-removebg-preview.png")  center center  /  cover;
+    //  height: 100%;  
+    
+}
+ion-content {
+    width: calc(100% + 20px);
+    --padding-end: 20px !important;
+  }
+  
+  ion-content::part(scroll) {
+    margin-right: 0px;
+  }
+.a{
+    font-size: 50px;
+}
+.all{
+    position: relative;
+    text-align: center;
+    top: -290px;
+}
+.co{
+   width: 130px!important;
+   --background: #f12606;
+   --ion-background-color:#f12606;
+
+}
+.pip{
+    
+font-family: 'Inika';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 20px;
+
+color: #151921;
+
+}

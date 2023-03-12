@@ -1,0 +1,41 @@
+.ob{
+    background:linear-gradient(0deg,rgba(120, 100, 128, 0),rgba(121, 14, 14, 0)),
+    url("/assets/sou-removebg-preview.png") no-repeat center center  /  cover;
+}
+.al{
+    background:linear-gradient(0deg,rgba(120, 100, 128, 0),rgba(121, 14, 14, 0)),
+    url("/assets/vasy-removebg-preview.png") no-repeat center center  /  cover;
+  
+}
+.ol{
+    background:linear-gradient(0deg,rgba(120, 100, 128, 0),rgba(121, 14, 14, 0)),
+    url("/assets/sou4-removebg-preview.png") no-repeat center center  /  cover;
+  
+}
+.o{
+    background:linear-gradient(0deg,rgba(18, 17, 19, 0.733),rgba(121, 14, 14, 0)),
+    url("/assets/yous9.webp") no-repeat center center  /  cover;
+  
+}
+// ion-content {
+//     // ICI ON BLOCK LE SCROLLING
+//     --offset-bottom: auto !important;
+//     background: #f8f6fb;
+//     --overflow: hidden;
+//     overflow: auto;
+//     &::-webkit-scrollbar {
+//       display: none;
+//     }
+//   }
+ion-content {
+    width: calc(100% + 20px);
+    --padding-end: 20px !important;
+  }
+  
+  ion-content::part(scroll) {
+    margin-right: -20px;
+  }
+  ion-item{
+    --background: #083ba000;
+
+  }

@@ -1,0 +1,30 @@
+.k{
+    background:linear-gradient(0deg,rgba(0, 0, 0, 0),rgba(122, 74, 74, 0)),
+    url("/assets/yous2.webp") no-repeat center center  /  cover;
+    object-fit:unset;
+    margin-top: -10px;
+}
+.alo{
+    --background: #151515;
+    color: white;
+    --ion-item-border-color: transparent;
+    list-style-type: none;
+
+}
+.p{
+  // background:linear-gradient(0deg,rgba(83, 80, 80, 0),rgba(214, 105, 105, 0)),
+  // url("/assets/soum1.jpg")  center center  /  cover;
+
+  background:linear-gradient(0deg,rgba(0, 0, 0, 0),rgba(122, 74, 74, 0)),
+  url("/assets/back.jpg") no-repeat center center  /  cover;
+  object-fit:unset;
+  margin-top: -10px;
+}
+ion-content {
+    width: calc(100% + 20px);
+    --padding-end: 20px !important;
+  }
+  
+  ion-content::part(scroll) {
+    margin-right: -25px;
+  }

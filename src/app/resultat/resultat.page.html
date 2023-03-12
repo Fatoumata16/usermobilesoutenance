@@ -1,0 +1,65 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>resultat</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+<!-- 
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card class="C1">
+           <ion-card class="C2">
+            <img src="../../assets/soutenance2.jpg" alt="" width="80px" height="80px" class="image">
+        
+            <h1 class="H">Felicitation <br>
+               Fatoumata !!!</h1>
+               <span style="font-size: 10px; text-align: center; align-items: center; margin: auto; justify-content: center; font-weight: 100; display: flex;">Je vous felicite d'avoir <br> bien valiter votre soutenance  </span>
+            <ion-button class="btn">valider</ion-button>
+            </ion-card>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid> -->
+  <div style="width: 100%;height: 37%;background-color: rgb(47, 47, 48);" class="im">
+    <ion-button color="dark" [routerLink]="['/tabs/accueilpouretudiant']"><ion-icon name="arrow-back-outline"></ion-icon></ion-button>
+
+    <div style="position: relative;top: -99px;" > <img src="/assets/paul-removebg-preview.png" style="height: 60%;"></div>
+    <!-- <img src="/assets/pap3-removebg-preview.png" alt=""> -->
+    <div style="display: flex;justify-content: space-around;position: relative;   top: -109%;bottom: 50%;">
+     <div style="position: relative;top: 85px;color: rgb(255, 255, 255);">
+     <h1 style="position: relative;left: 10px;font-size: 17px;">{{h}}</h1>
+    </div> 
+     <div style="color: rgb(255, 255, 255);position: relative;top: 55px;">
+      
+      <h1 style="position: relative;left: 0px;font-size: 17px;">{{p}}</h1>
+      
+    </div> 
+      <div style="color: rgb(255, 255, 255);position: relative;top: 90px;">
+     <h1 style="font-size: 17px;position: relative;left: -5px;">{{k}}</h1>
+    </div> 
+
+ 
+</div>
+  </div>
+  <div style="width: 100%;height: 30%; background-color: rgb(253, 251, 251); ; margin-top: -35px; border-radius: 15%!important; ">
+    <br>
+    <div  >
+      <h2 style="text-align: center;">Le Classement </h2>
+      <!-- <ion-list class="alo"> -->
+        <ion-item class="alo"  *ngFor="let g of t">
+          <ion-avatar slot="start">
+            <ion-img src="https://i.pravatar.cc/300?u=b"></ion-img>
+          </ion-avatar>
+          <ion-label>
+            <h2>{{g[1]}} {{g[2]}}</h2>
+            <p>{{g[0]}}</p>
+          </ion-label>
+        </ion-item>
+       
+      <!-- </ion-list> -->
+    </div>
+  </div>
+
+</ion-content>

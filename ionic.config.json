@@ -1,0 +1,12 @@
+{
+  "name": "projetsoutenance",
+  "integrations": {
+    "proxies": [
+      {
+        "path": "/api",
+        "proxyUrl": "http://localhost:8080"
+      }],
+    "capacitor": {}
+  },
+  "type": "angular"
+}

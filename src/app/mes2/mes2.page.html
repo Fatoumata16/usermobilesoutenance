@@ -1,0 +1,68 @@
+<ion-header class="pi">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="Conv."></ion-back-button>
+    </ion-buttons>
+    <ion-title>Luke Skywalker<br><div class="status">En ligne</div></ion-title>
+    <ion-avatar slot="end">
+      <img src="/assets/soutenance2.jpg">
+    </ion-avatar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h3 style="color: black;">Fatoumata Dembele</h3>
+  <div *ngFor="let notification of notifications">
+    <ion-card style="height: 120px;border-radius: 20px;" >
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <h3 style="font-family: 'Inika';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            color: #000000;">{{notification.titre}} {{notification.dateenvoie}}</h3>
+            <p style="font-family: 'Inika';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 10px;
+            color: #000000;"> {{notification.description}} Lorem </p>
+            <ion-button style="margin-top: -5px;height: 30px;" [routerLink]="['/message', 2]">voir</ion-button>
+          </ion-col>
+          <ion-col>
+            <img src="/assets/soutenance2.jpg" alt="" style="height: 90px; width: 80%;">
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+    <!-- <ion-item lines="none">
+      <ion-badge color="warning" slot="end">Hey Luke comment ça va ?! <ion-note color="medium">21:16 <ion-icon name="done-all"></ion-icon></ion-note></ion-badge>
+    </ion-item>
+    
+    <ion-item lines="none">
+      <ion-badge color="light" slot="start">Plutôt bien merci <ion-note color="medium">21:17</ion-note></ion-badge>
+    </ion-item> -->
+  </div>
+    <!-- <ion-list>
+    <ion-item >
+      <ion-label>{{notification.titre}}</ion-label>
+      <ion-label>{{notification.dateenvoie}}mbonjourrrr</ion-label>
+      <ion-label>{{notification.description}}</ion-label>
+    </ion-item>
+  </ion-list> -->
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button fill="outline" shape="round" size="small">
+        <ion-icon slot="icon-only" name="arrow-round-up"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-input placeholder="Votre message"></ion-input>
+    <ion-buttons slot="end">
+      <ion-button >
+        Envoyer
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

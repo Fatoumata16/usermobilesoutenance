@@ -1,0 +1,43 @@
+ion-content {
+    width: calc(100% + 20px);
+    --padding-end: 20px !important;
+  }
+  
+  ion-content::part(scroll) {
+    margin-right: -19px;
+  }
+  .border-white {
+    border: 3px solid #151921;
+    border-radius: 50%;
+    width: fit-content;
+}
+.border-blue {
+    border: 3px solid #bf2d0000;
+    border-radius: 50%;
+    width: fit-content;
+}
+.img-box {
+    height: 85px;
+    width: 85px;
+    border-radius: 50%;
+    overflow: hidden;
+}.border-white {
+  border: 3px solid #151921;
+  border-radius: 50%;
+  width: fit-content;
+}
+.border-blue {
+  border: 3px solid #bf2d0000;
+  border-radius: 50%;
+  width: fit-content;
+}
+.img-box {
+  height: 85px;
+  width: 85px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.ol{
+  background:linear-gradient(0deg,rgba(0, 0, 0, 0.521),rgba(0, 0, 0, 0)),
+  url("/assets/yous2.webp")  center center  /  cover;
+}

@@ -1,0 +1,85 @@
+.li{
+    // background:linear-gradient(0deg,rgba(83, 80, 80, 0),rgba(214, 105, 105, 0)),
+    // url("/assets/soum1.jpg")  center center  /  cover;
+
+    background:linear-gradient(0deg,rgba(0, 0, 0, 0.75),rgba(122, 74, 74, 0.529)),
+    url("/assets/soum1.jpg") no-repeat center center  /  cover;
+    object-fit:unset;
+    margin-top: -10px;
+}
+ion-content {
+    width: calc(100% + 20px);
+    --padding-end: 20px !important;
+  }
+  
+  ion-content::part(scroll) {
+    margin-right: -25px;
+  }
+  ion-segment-button{
+    font-size: 10px;
+    color: var(--ion-color-medium);
+    border: 0px;
+    border-radius: 0px;
+}
+ion-segment{
+    height: 40px;
+}
+.segment-button-checked{
+    // background: #FFF;
+     color: var(--ion-color-primary);
+     border-top: 3px solid var(--ion-color-primary);
+     border-radius: 0px;
+    height: 3px!important;
+}
+// ion-modal {
+//     --height: 50%;
+//     --border-radius: 16px;
+//     --box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+//   }
+  
+//   ion-modal::part(backdrop) {
+//     background: rgba(209, 213, 219);
+//     opacity: 1;
+//   }
+  
+  // ion-modal ion-toolbar {
+  //   --background: rgb(10, 10, 10);
+  //   --color: white;
+  // }
+  ion-button {
+    // border-radius: 20px !important;
+    --background: #f8fcfa09;
+    --background-hover: #e6490b;
+    --background-activated: #f05112;
+    --background-focused: #eb270d;
+  
+    --color: rgb(17, 15, 15);
+  
+    --border-radius: 0;
+    --border-color: rgb(12, 12, 12);
+    --border-style: solid;
+    --border-width: 1px;
+  
+    --box-shadow: 0 2px 6px 0 rgb(0, 0, 0, 0.25);
+  
+    --ripple-color: rgb(245, 11, 11);
+  
+    --padding-top: 10px;
+    --padding-bottom: 10px;
+  }
+  ion-modal {
+    --height: 70%;
+    --border-radius: 16px;
+    
+    --box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  }
+  
+  ion-modal::part(backdrop) {
+    background: rgba(209, 213, 219, 0.253);
+    opacity: 1;
+  }
+  
+  ion-modal ion-toolbar {
+    --background: rgb(14 116 144);
+    --color: white;
+  }

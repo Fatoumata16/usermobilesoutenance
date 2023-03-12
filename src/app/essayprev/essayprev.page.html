@@ -1,0 +1,102 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>App</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+<ion-content class="ion-padding">
+  <div style="display: flex;justify-content: center;width: 100%;height: 100%;">
+  <div class="h" style="width: 100%;height: 100%;">
+    <h1 style="color: white;">fatoumata</h1>
+    <div style="display: flex;justify-content: center;;">
+    <img src="/assets/59434-happy-face-with-hugging-hands.gif" alt="" style="width: 140px;  position: relative ;top: 80px"></div>
+    <div style="position: relative;margin-top: 100px;">
+     <h4 style="font-size: 22px;font-weight: 500;font-family: 'Inika';text-align: center;">salut {{n}} {{p}}</h4>
+     <p *ngIf="duration && duration.message"  style="font-size: 18px;font-weight: 500;font-family: 'Inika';text-align: center;color: rgb(82, 78, 78);">pas de soutenance prevu pour maintenant </p>
+     <p *ngIf="duration && duration.hours"  style="font-size: 18px;font-weight: 500;font-family: 'Inika';text-align: center;color: rgb(82, 78, 78);">votre prochaine soutenance est dans {{duration.days}}j {{duration.hours}}h {{duration.minutes}}mn </p>
+    </div>
+    <div style="display: flex;justify-content: center;">
+      <ion-button style="margin-right: 10px;" [routerLink]="['/accueil']">accueil</ion-button>
+      <ion-button  style="margin-right: 10px;" *ngIf=" duration && duration.hours" [routerLink]="['/prev2']">soutenance</ion-button>
+ 
+    </div>
+  </div> </div>
+    <!-- <div style="margin-top: auto;margin-bottom: auto;">
+  <div style="width: 100%;display: flex;justify-content: center;">
+    <div  >
+    <img src="/assets/59434-happy-face-with-hugging-hands.gif" alt="" style="width: 140px;">
+    
+   </div>  </div>
+   <div style="margin: 20px;">
+     <h3 style="font-size: 22px;font-weight: 500;font-family: 'Inika';text-align: center;">Bienvenue Fatoumata Dembele</h3>
+     <p style="font-size: 18px;font-weight: 500;font-family: 'Inika';text-align: center;color: rgb(82, 78, 78);">votre prochaine soutenance est dans   <span>{{duration.days}}j {{duration.hours}}h {{duration.minutes}}mn</span>
+   </p>
+   </div>
+   <div style="display: flex;justify-content: center;">
+     <ion-button style="margin-right: 10px;">accueil</ion-button>
+     <ion-button  style="margin-right: 10px;">soutenance</ion-button>
+
+   </div></div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <ion-button id="open-modall" expand="block" >Open Modal</ion-button> 
+  <ion-modal #modal trigger="open-modall" >
+    <ng-template>
+      <ion-content>
+        <div style="width: 100%;display: flex;justify-content: center;">
+         <div  >
+         <img src="/assets/59434-happy-face-with-hugging-hands.gif" alt="" style="width: 140px;">
+         
+        </div>  </div>
+        <div style="margin: 20px;">
+          <h3 style="font-size: 22px;font-weight: 500;font-family: 'Inika';text-align: center;">Bienvenue Fatoumata Dembele</h3>
+          <p style="font-size: 18px;font-weight: 500;font-family: 'Inika';text-align: center;color: rgb(82, 78, 78);">votre prochaine soutenance est dans   <span>{{duration.days}}j {{duration.hours}}h {{duration.minutes}}mn</span>
+        </p>
+        </div>
+        <div style="display: flex;justify-content: center;">
+          <ion-button style="margin-right: 10px;">accueil</ion-button>
+          <ion-button  style="margin-right: 10px;">soutenance</ion-button>
+
+        </div>
+       
+     
+      </ion-content>
+    </ng-template>
+  </ion-modal> -->
+   
+      <!-- <div style="width: 100%;display: flex;justify-content: center;">
+        <div  >
+        <img src="/assets/59434-happy-face-with-hugging-hands.gif" alt="" style="width: 140px;">
+        
+       </div>  </div>
+       <div style="margin: 20px;">
+         <h3 style="font-size: 22px;font-weight: 500;font-family: 'Inika';text-align: center;">Bienvenue Fatoumata Dembele</h3>
+         <p style="font-size: 18px;font-weight: 500;font-family: 'Inika';text-align: center;color: rgb(82, 78, 78);">votre prochaine soutenance est dans   <span>{{duration.days}}j {{duration.hours}}h {{duration.minutes}}mn</span>
+       </p>
+       </div>
+       <div style="display: flex;justify-content: center;">
+         <ion-button style="margin-right: 10px;">accueil</ion-button>
+         <ion-button  style="margin-right: 10px;">soutenance</ion-button>
+
+       </div> -->
+   
+ 
+
+
+</ion-content>

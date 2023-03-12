@@ -1,0 +1,80 @@
+.imgpart{
+    background-color: red;
+    height: 25%;
+    width: 100%;
+}
+
+.text{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #54DEFC;
+    font-weight: bold;
+}
+.mycard{
+    width: 90%;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0 , 0.4);
+    border-radius: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    margin-bottom: 10px;
+}
+.niveau{
+    display: flex;
+    justify-content: space-between;
+}
+
+.paragraph{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bande{
+    height: 60px;
+    width: 100%;
+    background-color: #D9D9D9;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    text-align: center;
+}
+.btn1{
+    padding: 8px;
+    background-color: #ABA3A3;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.btn2{
+    padding: 8px;
+    background-color: #54DEFC;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.btnetape{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+.btnE{
+    width: 110px;
+    padding: 8px;
+    background-color: #D9D9D9;
+    color: black;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}

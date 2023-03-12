@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="color: #0edfc3;">evaluation</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div style="width: 100%;height: 5%;margin-top: 30px;" >
+    <div style="width: 100%;display: flex;justify-content: center !important;position: relative;">
+      <ion-progress-bar [value]="evaluationPercentage" max=items.length-1 style="width: 85%;height: 10px;background-color: rgb(245, 239, 239);border-radius: 10px;"></ion-progress-bar>
+     </div>
+  </div>
+  <div style="width: 100%;height: 99%;position: relative;top: -30;" class="h">
+    <div style="display: flex;justify-content: center;">
+      
+      <ion-card style="height: 50%;width: 98%;position: relative;top: 30px;border-radius: 10px;">
+        <br>
+      <ion-card-content style="text-align: center;">
+        <div *ngFor="let item of items;let i=index" style="position: relative;top: -20px;">
+          <div *ngIf="currentindex===i">
+        <h6> {{item[1]}}</h6>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam autem accusamus esse odit.
+           Vel enim provident suscipit consequuntur, 
+           unde pariatur excepturi iusto saepe eveniet ea optio voluptas quisquam praesentium quas?</p>
+           <ion-item>
+            <ion-input type="number" maxlength="20" color="dark" placeholder="Votre notes ici " [(ngModel)]="votrenote"></ion-input>
+           </ion-item>
+           <div  style="display: flex;justify-content: space-around;">
+            <ion-button (click)="nextitem(item[0])" style="width: 130px;"  [disabled]="currentindex >= items.length "> suivant</ion-button>
+            <ion-button (click)="previousitem()"  [disabled]="currentindex <= 0" > precedent</ion-button> </div>
+            <div  style="display: flex;justify-content: space-around;position: relative;top: 20px;">
+              <ion-button (click)="vrai(item[0])" style="width: 130px;"  [disabled]="currentindex >= items.length "> valider</ion-button>
+              <ion-button (click)="faux(item[0])" [disabled]="currentindex >= items.length "> pas valider</ion-button> </div>
+          </div>
+          </div>
+      </ion-card-content>
+      </ion-card> 
+  
+  </div>
+  </div>
+</ion-content>
